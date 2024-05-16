@@ -1,0 +1,18 @@
+<form class="registration-form" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <h2 class="registration-title">Registration</h2>
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" formControlName="fullName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+    <a [routerLink]="['/login']">Already a user? Login Here</a>
+    <button type="submit" [disabled]="registrationForm.invalid" class="btn btn-primary">Submit</button>
+  </form>
+    

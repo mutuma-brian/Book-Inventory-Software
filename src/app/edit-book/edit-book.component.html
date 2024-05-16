@@ -1,0 +1,28 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <label>
+      Title:
+      <input type="text" formControlName="title">
+    </label>
+    <label>
+      Author:
+      <input type="text" formControlName="author">
+    </label>
+    <label>
+      Year of Release:
+      <input type="text" formControlName="yearOfRelease">
+    </label>
+    <label>
+      Genre:
+      <input type="text" formControlName="genre">
+    </label>
+    <label>
+      ISBN:
+      <input type="text" formControlName="isbn">
+    </label>
+    <label>
+      Quantity:
+      <input type="number" formControlName="quantity">
+    </label>
+    <button type="submit" [disabled]="bookForm.invalid">Update Book</button>
+  </form>
+  

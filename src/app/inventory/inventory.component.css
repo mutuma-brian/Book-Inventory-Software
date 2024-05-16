@@ -1,0 +1,23 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .grid-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }  
